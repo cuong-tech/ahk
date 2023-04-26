@@ -2,7 +2,13 @@
 	If (A_PriorKey = "LControl") {
 		Send {Esc}
 	}
+return
 
+^!+b::
+Send ^v
+Sleep 200
+Send {Enter}
+return
 
 $Ctrl::
 If GetKeyState("Ctrl", "P")
